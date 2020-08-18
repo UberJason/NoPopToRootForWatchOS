@@ -12,7 +12,6 @@
 		964F508524EC454F00CFBBE3 /* NoPopToRootForWatchOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 964F508424EC454F00CFBBE3 /* NoPopToRootForWatchOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		964F508A24EC454F00CFBBE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964F508924EC454F00CFBBE3 /* ContentView.swift */; };
 		964F508C24EC454F00CFBBE3 /* NoPopToRootForWatchOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964F508B24EC454F00CFBBE3 /* NoPopToRootForWatchOSApp.swift */; };
-		964F508E24EC454F00CFBBE3 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964F508D24EC454F00CFBBE3 /* ComplicationController.swift */; };
 		964F509024EC455000CFBBE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964F508F24EC455000CFBBE3 /* Assets.xcassets */; };
 		964F509324EC455000CFBBE3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964F509224EC455000CFBBE3 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -67,7 +66,6 @@
 		964F508424EC454F00CFBBE3 /* NoPopToRootForWatchOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NoPopToRootForWatchOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		964F508924EC454F00CFBBE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		964F508B24EC454F00CFBBE3 /* NoPopToRootForWatchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoPopToRootForWatchOSApp.swift; sourceTree = "<group>"; };
-		964F508D24EC454F00CFBBE3 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		964F508F24EC455000CFBBE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		964F509224EC455000CFBBE3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		964F509424EC455000CFBBE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 			children = (
 				964F508924EC454F00CFBBE3 /* ContentView.swift */,
 				964F508B24EC454F00CFBBE3 /* NoPopToRootForWatchOSApp.swift */,
-				964F508D24EC454F00CFBBE3 /* ComplicationController.swift */,
 				964F508F24EC455000CFBBE3 /* Assets.xcassets */,
 				964F509424EC455000CFBBE3 /* Info.plist */,
 				964F509124EC455000CFBBE3 /* Preview Content */,
@@ -261,7 +258,6 @@
 			files = (
 				964F508A24EC454F00CFBBE3 /* ContentView.swift in Sources */,
 				964F508C24EC454F00CFBBE3 /* NoPopToRootForWatchOSApp.swift in Sources */,
-				964F508E24EC454F00CFBBE3 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +411,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7;
 			};
 			name = Debug;
 		};
@@ -439,7 +435,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7;
 			};
 			name = Release;
 		};
@@ -459,7 +455,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7;
 			};
 			name = Debug;
 		};
@@ -479,7 +475,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7;
 			};
 			name = Release;
 		};

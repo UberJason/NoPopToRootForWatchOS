@@ -12,9 +12,13 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-        Text("Hello, World!")
-            .padding()
-            NavigationLink("Push Me", destination: DetailView(rootIsActive: $rootIsActive), isActive: $rootIsActive)
+            VStack {
+                Text("Hello, World!")
+                    .padding()
+                NavigationLink(destination: DetailView(rootIsActive: $rootIsActive), isActive: $rootIsActive) {
+                    Text("Push Me")
+                }.navigationTitle("Root")
+            }
         }
     }
 }
@@ -24,8 +28,9 @@ struct DetailView: View {
     
     var body: some View {
         VStack {
-            Text("2nd Screen")
+            Text("2nd Screen (Note - no back button above!)")
             NavigationLink("Push To 3rd Screen", destination: ThirdView(rootIsActive: $rootIsActive))
+                .navigationTitle("Detail")
         }
     }
 }
@@ -35,7 +40,7 @@ struct ThirdView: View {
     
     var body: some View {
         VStack {
-            Text("3rd Screen")
+            Text("3rd Screen (Note - no back button above!)")
             Button("Try Pop to Root") {
                 rootIsActive.toggle()
             }
