@@ -11,7 +11,7 @@ struct ContentView: View {
     @State var rootIsActive: Bool = false
     
     var body: some View {
-        NavigationView {
+//        NavigationView {
             VStack {
                 Text("Hello, World!")
                     .padding()
@@ -19,7 +19,7 @@ struct ContentView: View {
                     Text("Push Me")
                 }.navigationTitle("Root")
             }
-        }
+//        }
     }
 }
     
