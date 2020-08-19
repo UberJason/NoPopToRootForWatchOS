@@ -5,6 +5,10 @@ This sample project shows two bugs.
 Bug #1: 
 Using NavigationLink inside a NavigationView doesn't show the back button. When not using NavigationView, the back button does display.
 
+With NavigationView:
+
+
+<img width=200 src="https://github.com/UberJason/NoPopToRootForWatchOS/blob/main/NavView%20-%20Root.png"> <img width=200 src="https://github.com/UberJason/NoPopToRootForWatchOS/blob/main/NavView%20-%20Detail.png">
 
 Bug #2 (FB8452933): 
 When more than 2 screens deep into a navigation stack, there is no way to programmatically pop to the root view. Even passing a binding of the root view's NavigationLink doesn't work, as toggling it only appears to pop back by one screen.
