@@ -5,6 +5,14 @@ This sample project shows two bugs.
 ## Bug #1: 
 Using NavigationLink inside a NavigationView doesn't show the back button. When not using NavigationView, the back button does display.
 
+Steps to reproduce:
+1. Run the sample project
+2. Observe the root and second views and the lack of a back button on the second view
+3. Comment out the NavigationView code, leaving the VStack as the root of ContentView.body
+4. Run the sample project again
+5. Observe the root and second views and the *presence* of a back button on the second view
+
+
 With NavigationView:
 
 
